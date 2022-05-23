@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgba(216, 230, 244, 0.825) !important;
+
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+.card{
+    margin-top: 20px;
+    box-shadow: 2px 2px 8px;
+    transition: 0.8s;
+    width: 350px !important;
+    margin-bottom: 10px;
+}
+.card:hover{
+    margin-left: 5px;
+}
+
+.navbar{
+    z-index: 2;
+    width: 90%;
+    background-color:rgba(128, 128, 128, 0.19) !important;
+    height: 100px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 8px;
+    flex-wrap: nowrap !important;
+    margin: auto;
+    }
+    .navbar img{
+        height: 70px;
+        width: 70px;
+    }
+    .navbar span::first-letter{
+        color: rgb(169, 40, 40);
+        font-size: 25px;
+    }
+    .navbar span{
+        font-size: 25px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+    }
+    h1,h4,p{
+        font-family: 'Cairo', sans-serif;
+
+    }
+    .card h1, .card h4, .card p{
+        text-align: center;
+    }
+    button{
+        font-family: 'Cairo', sans-serif;
+
+    }
+    @media screen and (max-width: 375px){
+        .card{
+            width: 90% !important;
+        }
+    }
