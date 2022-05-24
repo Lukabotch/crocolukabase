@@ -2,7 +2,7 @@ var cont = document.querySelector(".container")
 // gets user Id from the local storage. the user id was saved in the local storage when user button was clicked on the home page.
 var userId = localStorage.getItem('usersID')
 // fetches specific posts from server by user Id.
-fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
+fetch(`https://jsonplaceholder.typicode.com/posts?userId=${Number(userId)+1}`)
 .then(res => res.json())
 .then(data)
 // integrates user data into html
